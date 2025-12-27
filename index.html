@@ -3,70 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Ibrahem Amar - Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* Simple CSS to make it look nice */
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
-        header { background-color: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5em; }
-        header p { font-size: 1.2em; color: #bdc3c7; }
+        /* Modern Clean Design */
+        :root {
+            --primary: #2563eb; /* Blue */
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; line-height: 1.6; color: var(--text); background: var(--light); }
         
-        /* The Container */
-        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
-        
-        /* Buttons */
-        .btn { display: inline-block; background-color: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; font-weight: bold; }
-        .btn:hover { background-color: #2980b9; }
+        /* Header */
+        header { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 60px 20px; text-align: center; }
+        h1 { margin: 0; font-size: 2.8em; font-weight: 700; }
+        .subtitle { font-size: 1.3em; color: #94a3b8; margin-top: 10px; }
+        .contact-info { margin-top: 20px; font-size: 0.9em; }
+        .contact-info a { color: #fff; text-decoration: none; margin: 0 10px; }
+        .contact-info i { margin-right: 5px; }
 
-        /* Sections */
-        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        h2 { border-bottom: 2px solid #3498db; padding-bottom: 10px; color: #2c3e50; }
-        
-        /* Projects List */
-        .project { margin-bottom: 15px; }
-        .project-title { font-weight: bold; font-size: 1.1em; }
-        .project-desc { color: #666; }
+        /* Container */
+        .container { max-width: 900px; margin: -40px auto 40px; padding: 0 20px; position: relative; }
+
+        /* Cards */
+        .card { background: white; padding: 30px; margin-bottom: 25px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
+        h2 { color: var(--dark); border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 0; font-size: 1.5em; }
+        h3 { margin-bottom: 5px; color: #1e293b; }
+        .date { color: #64748b; font-size: 0.9em; margin-bottom: 10px; display: block; }
+
+        /* Skills Tags */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #e0f2fe; color: #0369a1; padding: 5px 12px; border-radius: 20px; font-size: 0.9em; font-weight: 600; }
+
+        /* Buttons */
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: white; }
     </style>
 </head>
 <body>
 
     <header>
         <h1>Ibrahem Amar</h1>
-        <p>Developer | React | Python</p>
-        <a href="https://github.com/ibrahemamar" class="btn">View My GitHub</a>
+        <div class="subtitle">Software Engineering Student | AI & Machine Learning Enthusiast</div>
+        
+        <div class="contact-info">
+            <a href="mailto:abrahem.sadekk@gmail.com"><i class="fas fa-envelope"></i> abrahem.sadekk@gmail.com</a>
+            <a href="https://linkedin.com/in/YOUR-LINKEDIN-ID"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/ibrahemamar"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <br>
+        <a href="cv.pdf" class="btn" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
     </header>
 
     <div class="container">
         
-        <div class="section">
+        <div class="card">
             <h2>About Me</h2>
-            <p>Hello! I am a passionate developer looking for opportunities. I have experience building web applications and working with data.</p>
-            <a href="#" class="btn">Download My CV (PDF)</a>
+            <p>Motivated software engineering student with a solid foundation in programming and problem-solving. Currently developing projects and skills focused on AI and machine learning, working toward becoming an AI engineer. Eager to contribute creativity and strong technical growth to innovative teams.</p>
         </div>
 
-        <div class="section">
-            <h2>My Projects</h2>
-            
-            <div class="project">
-                <div class="project-title">1. Plant Disease Identification Project</div>
-                <p class="project-desc">A tool to identify plant diseases using AI. Built with Python and RAG.</p>
-                <a href="#">View Code</a>
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C / Assembly</span>
+                <span class="skill-tag">NLP & LLMs</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">HTML/CSS/JS</span>
+                <span class="skill-tag">SQL & RDBMS</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">Linux / Unix</span>
             </div>
-            
-            <hr>
-
-            <div class="project">
-                <div class="project-title">2. React Web Application</div>
-                <p class="project-desc">A front-end web app built with React.js featuring a modern UI.</p>
-                <a href="#">View Code</a>
-            </div>
-
         </div>
 
-        <div class="section">
-            <h2>Contact</h2>
-            <p>Email: your-email@example.com</p>
-            <p>LinkedIn: <a href="#">My LinkedIn Profile</a></p>
+        <div class="card">
+            <h2>Education</h2>
+            <h3>B.Sc. in Software Engineering</h3>
+            <span class="date">Braude College | 2023 - Present</span>
+            <p>Current Cumulative GPA: 82.76</p>
+            
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+            
+            <h3>Certifications</h3>
+            <ul style="margin-top: 5px;">
+                <li><strong>Complete AI Engineer Bootcamp:</strong> Udemy (2025)</li>
+                <li><strong>PyTorch for Deep Learning:</strong> Udemy (2025)</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Featured Projects</h2>
+            
+            <div style="margin-bottom: 20px;">
+                <h3>Automated Parking Management System</h3>
+                <span class="date">Java Full-Stack | 2025</span>
+                <p>Designed and developed a full-stack Java application to automate parking operations. Built features including vehicle check-in/check-out, subscription management, and report generation using Agile/SCRUM methodologies.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <h3>Dynamic Website Development</h3>
+                <span class="date">HTML, CSS, JavaScript | 2024</span>
+                <p>Designed and built interactive, responsive websites prioritizing user experience, layout optimization, and accessibility best practices.</p>
+            </div>
         </div>
 
     </div>
