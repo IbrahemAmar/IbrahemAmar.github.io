@@ -12,6 +12,7 @@
             --dark: #1e293b;
             --light: #f8fafc;
             --text: #334155;
+            --accent: #10b981; /* Green for Live Demo */
         }
         body { font-family: 'Segoe UI', system-ui, sans-serif; margin: 0; line-height: 1.6; color: var(--text); background: var(--light); }
         
@@ -40,9 +41,13 @@
         .btn { display: inline-block; background: var(--primary); color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.3s; }
         .btn:hover { background: #1d4ed8; transform: translateY(-2px); }
         
-        .btn-sm { padding: 8px 16px; font-size: 0.9em; margin-top: 10px; }
+        .btn-sm { padding: 8px 16px; font-size: 0.9em; margin-top: 10px; margin-right: 10px; }
         .btn-linkedin { background: #0077b5; }
         .btn-linkedin:hover { background: #005582; }
+        .btn-github { background: #333; }
+        .btn-github:hover { background: #000; }
+        .btn-live { background: var(--accent); } /* Special Green for Live Demo */
+        .btn-live:hover { background: #059669; }
 
     </style>
 </head>
@@ -75,6 +80,7 @@
                 <span class="skill-tag">Java</span>
                 <span class="skill-tag">C / Assembly</span>
                 <span class="skill-tag">NLP & LLMs</span>
+                <span class="skill-tag">Agentic AI</span>
                 <span class="skill-tag">Git & GitHub</span>
                 <span class="skill-tag">HTML/CSS/JS</span>
                 <span class="skill-tag">SQL & RDBMS</span>
@@ -102,6 +108,22 @@
         <div class="card">
             <h2>Featured Projects</h2>
             
+            <div style="margin-bottom: 25px;">
+                <h3>Career Conversation Agent (AI Agent)</h3>
+                <span class="date">Python, LLMs, Hugging Face Spaces | 2025</span>
+                <p>Developed an intelligent conversational agent capable of discussing career paths and professional advice. Built using Python and Large Language Models, and deployed as a live interactive web application on Hugging Face.</p>
+                
+                <a href="https://huggingface.co/spaces/IbrahemAmar/career_conversation" target="_blank" class="btn btn-sm btn-live">
+                    <i class="fas fa-robot"></i> Try Live Agent
+                </a>
+                
+                <a href="https://github.com/ibrahemamar/agentic-ai-engineering" target="_blank" class="btn btn-sm btn-github">
+                    <i class="fab fa-github"></i> View Code
+                </a>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
             <div style="margin-bottom: 25px;">
                 <h3>Automated Parking Management System</h3>
                 <span class="date">Java Full-Stack | 2025</span>
